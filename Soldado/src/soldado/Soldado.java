@@ -37,7 +37,7 @@ public class Soldado {
 
 		public Estado recibirCuracion() {
 			System.out.println("Soldado:- Gracias, pero estoy saludable");
-			return new EstadoSaludable();
+			return this;
 		}
 
 		public String toString() {
@@ -69,7 +69,7 @@ public class Soldado {
 
 		public Estado recibirDisparo() {
 			balazos++;
-			return new EstadoMuerto();
+			return this);
 		}
 
 		public Estado recibirCuracion() {
